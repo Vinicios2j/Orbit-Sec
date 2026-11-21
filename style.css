@@ -142,6 +142,10 @@ select option{background:#0a142a}
 .check input{width:18px;height:18px;margin-top:2px;accent-color:var(--azure);flex-shrink:0}
 form .btn{grid-column:1/-1;padding:15px;font-size:15px}
 .form-msg{grid-column:1/-1;font-size:13px;color:#ff8a9c;min-height:1em;margin:-6px 0 0}
+.form-msg.ok{color:#4ade80}.form-msg a{color:var(--cyan);text-decoration:underline}
+.hp{position:absolute!important;left:-9999px;width:1px;height:1px;overflow:hidden}
+form{position:relative}
+form .btn:disabled{opacity:.6;cursor:wait;transform:none}
 
 /* cta + footer */
 .cta{padding:0 0 90px}
