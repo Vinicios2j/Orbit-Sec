@@ -137,14 +137,15 @@
 <div class="contact-info">
 <div class="eyebrow"><i class="dot"></i> SOLICITE UM ORÇAMENTO</div>
 <h2>Conte sobre seu projeto.</h2>
-<p>Preencha o formulário e ele já abre uma conversa no nosso WhatsApp com todas as informações. Respondemos com os próximos passos e um orçamento personalizado.</p>
+<p>Preencha o formulário e sua solicitação chega direto para a nossa equipe. Entramos em contato pelo WhatsApp ou e-mail com os próximos passos e um orçamento personalizado.</p>
 <div class="info-list">
-<div><span>◷</span>Resposta rápida pelo WhatsApp</div>
+<div><span>◷</span>Retorno rápido pelo WhatsApp ou e-mail</div>
 <div><span>◇</span>Nenhum teste começa sem sua autorização</div>
 <div><span>▤</span>Orçamento sem compromisso</div>
 </div>
 </div>
 <form id="contact-form" novalidate>
+<div class="hp" aria-hidden="true"><label for="f-gotcha">Não preencha este campo</label><input id="f-gotcha" name="_gotcha" tabindex="-1" autocomplete="off"></div>
 <div class="field"><label for="f-nome">Nome *</label><input id="f-nome" name="nome" required autocomplete="name"></div>
 <div class="field"><label for="f-empresa">Empresa</label><input id="f-empresa" name="empresa" autocomplete="organization"></div>
 <div class="field"><label for="f-email">E-mail</label><input id="f-email" name="email" type="email" autocomplete="email"></div>
@@ -162,7 +163,7 @@
 <div class="field full"><label for="f-msg">Mensagem</label><textarea id="f-msg" name="mensagem" placeholder="Conte um pouco sobre seu site, o que preocupa e o que espera da avaliação."></textarea></div>
 <label class="check"><input type="checkbox" id="f-auth" required> Declaro que sou responsável pelo site/sistema informado ou tenho autorização para solicitar a avaliação.</label>
 <p class="form-msg" id="form-msg" role="alert"></p>
-<button class="btn btn-top" type="submit">Enviar pelo WhatsApp ↗</button>
+<button class="btn btn-top" id="form-btn" type="submit">Enviar solicitação ↗</button>
 </form>
 </div></section>
 
