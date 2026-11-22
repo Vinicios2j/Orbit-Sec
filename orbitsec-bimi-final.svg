@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny-ps" viewBox="0 0 1200 1200">
+<title>OrbitSec</title><rect width="1200" height="1200" fill="#03112b"/>
+<circle cx="600" cy="600" r="576" fill="none" stroke="#00edea" stroke-width="13"/>
+<!-- Upper crescent -->
+<path d="M174 565 C197 325 378 170 594 168 C730 166 817 218 887 290 C793 235 710 220 613 221 C396 221 256 343 174 565Z" fill="#f8fcff"/>
+<!-- Lower crescent -->
+<path d="M307 888 C434 1006 615 1031 764 958 C901 892 989 774 1009 642 C1012 835 875 1028 686 1061 C533 1086 395 1012 307 888Z" fill="#f8fcff"/>
+<!-- Orbit rear -->
+<path d="M213 715 C300 568 573 411 823 348 C957 314 1053 346 1062 418 C1074 503 962 603 813 692 C934 580 999 478 959 420 C920 360 806 383 683 425 C462 503 297 627 251 729 C222 798 271 818 352 807 C284 843 160 829 166 756 C168 742 185 725 213 715Z" fill="#02c5ed"/>
+<!-- Shield silhouette -->
+<path d="M600 275 C688 342 769 369 882 393 L882 556 C878 749 770 883 600 970 C430 883 322 749 318 556 L318 393 C431 369 512 342 600 275Z" fill="#087ef3"/>
+<path d="M600 331 C685 391 764 419 838 438 L838 553 C834 711 748 836 600 917 C452 836 366 711 362 553 L362 438 C436 419 515 391 600 331Z" fill="#01142d"/>
+<path d="M600 361 C665 406 737 439 808 456 L808 554 C803 689 731 802 600 883 C469 802 397 689 392 554 L392 456 C463 439 535 406 600 361Z" fill="#082c62"/>
+<path d="M600 361 L600 883 C469 802 397 689 392 554 L392 456 C463 439 535 406 600 361Z" fill="#1268bb" opacity=".15"/>
+<!-- Lock -->
+<path d="M527 573 V535 C527 431 673 431 673 535 V573" fill="none" stroke="#f7fcff" stroke-width="36" stroke-linecap="round"/>
+<rect x="495" y="556" width="210" height="161" rx="27" fill="#f8fcff"/>
+<circle cx="600" cy="626" r="23" fill="#031330"/>
+<path d="M589 637 H611 L615 680 H585Z" fill="#031330"/>
+<!-- Orbit foreground, sweeping in front of shield -->
+<path d="M180 757 C193 826 330 842 511 795 C717 742 915 631 1017 502 C1063 442 1075 394 1054 367 C1117 433 1058 550 956 641 C831 754 650 835 481 870 C294 910 167 865 145 794 C133 752 155 707 197 667 C181 702 173 731 180 757Z" fill="#02c5ed"/>
+<path d="M158 785 C180 849 306 875 484 836 C699 790 893 681 1012 538" fill="none" stroke="#62faff" stroke-opacity=".6" stroke-width="5" stroke-linecap="round"/>
+</svg>
