@@ -1,14 +1,10 @@
 
-{`// ===== CONFIGURAÇÃO =====
 const API_URL = "https://orbitsec.squareweb.app";
 const WHATSAPP_NUMBER = "5511989227678";
-
-// Ainda não foi informado o WhatsApp da A3MS.
-// O botão utiliza o contato comercial da OrbitSec até ser configurado.
 const A3MS_WHATSAPP = WHATSAPP_NUMBER;
 
 function waLink(number, message) {
-  return \`https://wa.me/\${number}\${message ? \`?text=\${encodeURIComponent(message)}\` : ""}\`;
+  return `https://wa.me/${number}${message ? `?text=${encodeURIComponent(message)}` : ""}`;
 }
 
 function setExternal(el, href) {
@@ -18,32 +14,25 @@ function setExternal(el, href) {
   el.rel = "noopener noreferrer";
 }
 
-// ===== BOTÕES DOS SERVIÇOS =====
 document.querySelectorAll(".plan-link").forEach((link) => {
   setExternal(
     link,
     waLink(
       WHATSAPP_NUMBER,
-      \`Olá! Vi o serviço \${link.dataset.plan} no site da OrbitSec e gostaria de saber mais e solicitar um orçamento.\`
+      `Olá! Vi o serviço ${link.dataset.plan} no site da OrbitSec e gostaria de saber mais e solicitar um orçamento.`
     )
   );
 });
 
-// ===== WHATSAPP GERAL =====
 const general = waLink(
   WHATSAPP_NUMBER,
   "Olá! Gostaria de conhecer os serviços da OrbitSec e receber uma orientação."
 );
 
-[
-  "general-whatsapp",
-  "footer-whatsapp",
-  "float-whatsapp"
-].forEach((id) => {
+["general-whatsapp", "footer-whatsapp", "float-whatsapp"].forEach((id) => {
   setExternal(document.getElementById(id), general);
 });
 
-// ===== WHATSAPP A3MS =====
 setExternal(
   document.getElementById("a3ms-whatsapp"),
   waLink(
@@ -52,14 +41,12 @@ setExternal(
   )
 );
 
-// ===== FORMULÁRIO -> PAINEL ORBITSEC =====
 const form = document.getElementById("contact-form");
 const formMsg = document.getElementById("form-msg");
 const formBtn = document.getElementById("form-btn");
 
 function showFormMsg(message, ok = false) {
   if (!formMsg) return;
-
   formMsg.textContent = message;
   formMsg.className = ok ? "form-msg ok" : "form-msg";
 }
@@ -71,15 +58,11 @@ if (form && formMsg && formBtn) {
     const v = (n) => form.elements[n].value.trim();
 
     if (!v("nome") || !v("telefone") || !v("servico")) {
-      return showFormMsg(
-        "Preencha nome, WhatsApp e serviço de interesse."
-      );
+      return showFormMsg("Preencha nome, WhatsApp e serviço de interesse.");
     }
 
     if (!document.getElementById("f-auth").checked) {
-      return showFormMsg(
-        "Confirme que você é responsável ou tem autorização sobre o ambiente."
-      );
+      return showFormMsg("Confirme que você é responsável ou tem autorização sobre o ambiente.");
     }
 
     const payload = {
@@ -99,52 +82,40 @@ if (form && formMsg && formBtn) {
     showFormMsg("");
 
     try {
-      const r = await fetch(\`\${API_URL}/api/leads\`, {
+      const r = await fetch(`${API_URL}/api/leads`, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
 
       const data = await r.json().catch(() => ({}));
 
       if (!r.ok) {
-        throw new Error(
-          data.error || "Não foi possível enviar agora."
-        );
+        throw new Error(data.error || "Não foi possível enviar agora.");
       }
 
       form.reset();
-
-      showFormMsg(
-        "✓ Solicitação enviada! Em breve entraremos em contato com você.",
-        true
-      );
-
+      showFormMsg("✓ Solicitação enviada! Em breve entraremos em contato com você.", true);
     } catch (err) {
       formMsg.className = "form-msg";
-
-      formMsg.textContent = \`${
+      formMsg.textContent = `${
         err.message === "Failed to fetch"
           ? "Não foi possível enviar agora."
           : err.message
-      } \`;
+      } `;
 
       const a = document.createElement("a");
-
       a.textContent = "Falar pelo WhatsApp";
 
       setExternal(
         a,
         waLink(
           WHATSAPP_NUMBER,
-          \`Olá! Tentei enviar o formulário do site. Meu nome é \${payload.nome} e tenho interesse em: \${payload.servico}.\`
+          `Olá! Tentei enviar o formulário do site. Meu nome é ${payload.nome} e tenho interesse em: ${payload.servico}.`
         )
       );
 
       formMsg.appendChild(a);
-
     } finally {
       formBtn.disabled = false;
       formBtn.textContent = "Enviar solicitação ↗";
@@ -152,7 +123,6 @@ if (form && formMsg && formBtn) {
   });
 }
 
-// ===== MENU MOBILE =====
 const navlinks = document.getElementById("navlinks");
 
 if (navlinks) {
@@ -163,9 +133,8 @@ if (navlinks) {
   });
 }
 
-// ===== ANO AUTOMÁTICO NO RODAPÉ =====
 const year = document.getElementById("year");
 
 if (year) {
   year.textContent = new Date().getFullYear();
-}`}
+}
