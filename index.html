@@ -13,6 +13,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<style>
+/* Imagens dos projetos: mantém o espaço organizado mesmo antes de enviar as fotos */
+.project-client .project-photo{width:100%;aspect-ratio:16/9;overflow:hidden;border-radius:14px;background:linear-gradient(135deg,#101a2d,#182a45);border:1px solid rgba(148,163,184,.16);margin:16px 0;display:flex;align-items:center;justify-content:center}
+.project-client .project-photo img{display:block;width:100%;height:100%;object-fit:cover}
+.project-client .project-photo.image-pending::after{content:"Imagem do projeto em breve";color:#a9b6c9;font-size:14px;text-align:center;padding:16px}
+.project-client .btn{margin-top:12px}
+</style>
 </head>
 <body>
 <header>
@@ -42,19 +49,19 @@
 <div class="strip-item"><b>4 serviços</b><span>do check-up ao reteste</span></div>
 <div class="strip-item"><b>100% autorizado</b><span>nada é testado sem termo assinado</span></div>
 <div class="strip-item"><b>Relatório claro</b><span>riscos priorizados e como corrigir</span></div>
-<div class="strip-item"><b>A partir de R$ 149</b><span>valores de referência por projeto</span></div>
+<div class="strip-item"><b>Orçamento personalizado</b><span>consulte pelo WhatsApp</span></div>
 </div></div>
 
 <!-- SERVIÇOS -->
 <section id="servicos"><div class="wrap">
 <div class="section-head"><div class="eyebrow"><i class="dot"></i> NOSSOS SERVIÇOS</div><h2>Do primeiro check-up ao teste completo.</h2><p class="sub-strong">Descubra onde seu site está vulnerável antes que alguém descubra por você.</p><p>Seja para uma verificação rápida ou para uma análise profunda, a OrbitSec tem o serviço certo para encontrar falhas e deixar seu ambiente digital mais protegido.</p><p class="note">Nenhum teste começa sem sua autorização. Objetivos e limites são combinados com você antes de tudo.</p></div>
 <div class="cards">
-<article class="card"><div class="service-no">SERVIÇO 01</div><h3>Check-up de Segurança</h3><div class="price">R$ 199 <small>/ projeto</small></div><p class="desc">O ponto de partida: uma verificação rápida para encontrar riscos visíveis e configurações que deixam seu site exposto.</p><div class="incl">O que você recebe</div><ul><li>Conferência do certificado HTTPS e da conexão segura.</li><li>Revisão das configurações básicas de proteção.</li><li>Busca por dados que estejam expostos publicamente sem necessidade.</li><li>Relatório resumido com o que foi encontrado e o que melhorar.</li></ul><div class="deadline">◷ Entrega em 1 a 2 dias úteis</div><a class="btn btn-outline plan-link" data-plan="Check-up de Segurança (R$ 199)" href="#">Quero o check-up ↗</a></article>
-<article class="card"><div class="service-no">SERVIÇO 02</div><h3>Avaliação Completa do Site</h3><div class="price">R$ 449 <small>/ projeto</small></div><p class="desc">Vamos além do básico e analisamos as partes mais importantes do seu site em busca de falhas que possam ser exploradas.</p><div class="incl">O que você recebe</div><ul><li>Tudo o que está no Check-up de Segurança.</li><li>Teste das áreas de login e autenticação definidas no escopo.</li><li>Análise de formulários e das funcionalidades escolhidas.</li><li>Verificação de possíveis falhas na proteção dos dados.</li><li>Relatório técnico com os riscos e o caminho para corrigir cada um.</li></ul><div class="deadline">◷ Entrega em 3 a 5 dias úteis</div><a class="btn btn-outline plan-link" data-plan="Avaliação Completa do Site (R$ 449)" href="#">Quero a avaliação ↗</a></article>
-<article class="card featured"><div class="service-no">SERVIÇO 03 · AVANÇADO</div><h3>Teste de Invasão Controlado</h3><div class="price">R$ 899 <small>/ projeto</small></div><p class="desc">Colocamos seu site à prova com as mesmas técnicas usadas por invasores, sempre de forma controlada e autorizada, para mostrar o que realmente pode ser explorado e qual seria o impacto.</p><div class="incl">O que você recebe</div><ul><li>Levantamento das funcionalidades liberadas para o teste.</li><li>Testes manuais e com ferramentas automatizadas.</li><li>Confirmação de cada vulnerabilidade encontrada.</li><li>Classificação dos riscos do mais grave ao mais leve.</li><li>Relatório completo com evidências e recomendações de correção.</li><li>Reunião para apresentar os resultados e tirar suas dúvidas.</li></ul><div class="deadline">◷ Entrega em 5 a 10 dias úteis</div><a class="btn btn-top plan-link" data-plan="Teste de Invasão Controlado (R$ 899)" href="#">Quero o teste avançado ↗</a></article>
-<article class="card"><div class="service-no">SERVIÇO 04</div><h3>Reteste de Correções</h3><div class="price">R$ 149 <small>/ projeto</small></div><p class="desc">Já corrigiu as falhas apontadas? A gente confere se o problema foi resolvido de verdade ou se ainda existe algum risco.</p><div class="incl">O que você recebe</div><ul><li>Nova checagem de até três vulnerabilidades já documentadas.</li><li>Confirmação de que as correções funcionaram.</li><li>Indicação do que ainda não foi resolvido nos itens revisados.</li><li>Relatório com o resultado de cada item verificado.</li></ul><div class="deadline">◷ Entrega em 1 a 2 dias úteis</div><a class="btn btn-outline plan-link" data-plan="Reteste de Correções (R$ 149)" href="#">Quero o reteste ↗</a></article>
+<article class="card"><div class="service-no">SERVIÇO 01</div><h3>Check-up de Segurança</h3><div class="price">Preço sob consulta</div><p class="desc">O ponto de partida: uma verificação rápida para encontrar riscos visíveis e configurações que deixam seu site exposto.</p><div class="incl">O que você recebe</div><ul><li>Conferência do certificado HTTPS e da conexão segura.</li><li>Revisão das configurações básicas de proteção.</li><li>Busca por dados que estejam expostos publicamente sem necessidade.</li><li>Relatório resumido com o que foi encontrado e o que melhorar.</li></ul><div class="deadline">◷ Entrega em 1 a 2 dias úteis</div><a class="btn btn-outline plan-link" data-plan="Check-up de Segurança" href="#">Saiba mais ↗</a></article>
+<article class="card"><div class="service-no">SERVIÇO 02</div><h3>Avaliação Completa do Site</h3><div class="price">Preço sob consulta</div><p class="desc">Vamos além do básico e analisamos as partes mais importantes do seu site em busca de falhas que possam ser exploradas.</p><div class="incl">O que você recebe</div><ul><li>Tudo o que está no Check-up de Segurança.</li><li>Teste das áreas de login e autenticação definidas no escopo.</li><li>Análise de formulários e das funcionalidades escolhidas.</li><li>Verificação de possíveis falhas na proteção dos dados.</li><li>Relatório técnico com os riscos e o caminho para corrigir cada um.</li></ul><div class="deadline">◷ Entrega em 3 a 5 dias úteis</div><a class="btn btn-outline plan-link" data-plan="Avaliação Completa do Site" href="#">Saiba mais ↗</a></article>
+<article class="card featured"><div class="service-no">SERVIÇO 03 · AVANÇADO</div><h3>Teste de Invasão Controlado</h3><div class="price">Preço sob consulta</div><p class="desc">Colocamos seu site à prova com as mesmas técnicas usadas por invasores, sempre de forma controlada e autorizada, para mostrar o que realmente pode ser explorado e qual seria o impacto.</p><div class="incl">O que você recebe</div><ul><li>Levantamento das funcionalidades liberadas para o teste.</li><li>Testes manuais e com ferramentas automatizadas.</li><li>Confirmação de cada vulnerabilidade encontrada.</li><li>Classificação dos riscos do mais grave ao mais leve.</li><li>Relatório completo com evidências e recomendações de correção.</li><li>Reunião para apresentar os resultados e tirar suas dúvidas.</li></ul><div class="deadline">◷ Entrega em 5 a 10 dias úteis</div><a class="btn btn-top plan-link" data-plan="Teste de Invasão Controlado" href="#">Saiba mais ↗</a></article>
+<article class="card"><div class="service-no">SERVIÇO 04</div><h3>Reteste de Correções</h3><div class="price">Preço sob consulta</div><p class="desc">Já corrigiu as falhas apontadas? A gente confere se o problema foi resolvido de verdade ou se ainda existe algum risco.</p><div class="incl">O que você recebe</div><ul><li>Nova checagem de até três vulnerabilidades já documentadas.</li><li>Confirmação de que as correções funcionaram.</li><li>Indicação do que ainda não foi resolvido nos itens revisados.</li><li>Relatório com o resultado de cada item verificado.</li></ul><div class="deadline">◷ Entrega em 1 a 2 dias úteis</div><a class="btn btn-outline plan-link" data-plan="Reteste de Correções" href="#">Saiba mais ↗</a></article>
 </div>
-<p class="fineprint"><b>Bom saber:</b> os preços e prazos acima valem para projetos de pequeno porte e podem mudar de acordo com o tamanho e a complexidade do sistema. Todo teste depende de autorização formal e de um escopo definido antes do início.</p>
+<p class="fineprint"><b>Bom saber:</b> os valores são definidos por orçamento, de acordo com o escopo, tamanho e complexidade do sistema. Os prazos informados são estimativas e podem variar. Todo teste depende de autorização formal e de um escopo definido antes do início.</p>
 </div></section>
 
 <!-- TESTES DO BEM -->
@@ -111,10 +118,10 @@
 
 <!-- EMPRESAS -->
 <section id="clientes"><div class="wrap">
-<div class="section-head"><div class="eyebrow"><i class="dot"></i> CONFIANÇA CONSTRUÍDA</div><h2>Empresas que já passaram por aqui.</h2><p>Negócios que confiaram na OrbitSec e autorizaram a divulgação do seu nome.</p></div>
+<div class="section-head"><div class="eyebrow"><i class="dot"></i> CONFIANÇA CONSTRUÍDA</div><h2>Empresas que já passaram por aqui.</h2><p>Conheça alguns projetos e empresas atendidos pela OrbitSec.</p></div>
 <div class="client-grid">
-<div class="client"><div class="tag">CLIENTE</div><h3>A3MS</h3><p>Bateria em relógio em geral</p><a class="btn btn-primary" id="a3ms-whatsapp" href="#"><svg class="wa-ico" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.1.1.7-.1 1.2Z"/></svg>Chamar no WhatsApp</a></div>
-<div class="client empty"><div class="tag">VAGA ABERTA</div><h3>Sua empresa aqui</h3><p>Proteja seu site e faça parte da lista de empresas que levam segurança a sério.</p><a class="btn btn-outline" href="#contato">Quero proteger meu site ↗</a></div>
+<article class="client project-client"><div class="tag">PROJETO EM DESTAQUE</div><div class="project-photo"><img src="assets/projetos/cavax.jpg" alt="Imagem do projeto CAVAX" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('image-pending')"></div><h3>CAVAX</h3><p>Empresa de tecnologia e soluções digitais.</p><a class="btn btn-primary" href="https://cavax.com.br" target="_blank" rel="noopener noreferrer">Conhecer a CAVAX ↗</a></article>
+<article class="client project-client"><div class="tag">CLIENTE</div><div class="project-photo"><img src="assets/projetos/a3ms.jpg" alt="Imagem do projeto A3MS Baterias e Relógios" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('image-pending')"></div><h3>A3MS Baterias e Relógios</h3><p>Assistência e serviços de baterias e relógios.</p><a class="btn btn-outline" id="a3ms-whatsapp" href="#">Conhecer a A3MS ↗</a></article>
 </div>
 </div></section>
 
@@ -126,7 +133,7 @@
 <details><summary>Preciso dar alguma senha ou acesso?</summary><p>Depende do serviço. Alguns testes são feitos de fora, como um visitante comum. Para avaliar áreas logadas, combinamos usuários de teste criados especificamente para isso.</p></details>
 <details><summary>Qual a diferença entre o check-up e o teste de invasão?</summary><p>O check-up verifica HTTPS, configurações básicas de proteção e informações expostas. O teste de invasão vai além: simula, de forma controlada e autorizada, técnicas de ataque para validar vulnerabilidades e avaliar seus possíveis impactos.</p></details>
 <details><summary>Quanto tempo leva?</summary><p>Os prazos estimados são: check-up e reteste em 1 a 2 dias úteis, avaliação completa em 3 a 5 dias úteis e teste de invasão em 5 a 10 dias úteis. Podem variar conforme a complexidade do sistema.</p></details>
-<details><summary>O valor pode mudar?</summary><p>Os valores do site são referências para projetos de pequeno porte. Sistemas maiores ou mais complexos podem ter valor e prazo diferentes, sempre combinados antes de começar.</p></details>
+<details><summary>Como consultar os valores?</summary><p>Clique em “Saiba mais” no serviço desejado para conversar com a OrbitSec pelo WhatsApp. O orçamento é personalizado conforme o escopo, o tamanho e a complexidade do ambiente, sempre definido antes de começar.</p></details>
 <details><summary>Meus dados ficam seguros?</summary><p>Sim. Tudo o que é encontrado é tratado com sigilo e entregue apenas a você e às pessoas que você indicar. Não copiamos nem divulgamos dados do seu ambiente.</p></details>
 <details><summary>Vocês corrigem as falhas também?</summary><p>Entregamos orientações detalhadas para sua equipe ou desenvolvedor corrigir. Depois, o reteste confirma se a correção funcionou.</p></details>
 </div>
@@ -154,10 +161,10 @@
 <div class="field full"><label for="f-servico">Serviço de interesse *</label>
 <select id="f-servico" name="servico" required>
 <option value="">Selecione…</option>
-<option>Check-up de Segurança (R$ 199)</option>
-<option>Avaliação Completa do Site (R$ 449)</option>
-<option>Teste de Invasão Controlado (R$ 899)</option>
-<option>Reteste de Correções (R$ 149)</option>
+<option>Check-up de Segurança</option>
+<option>Avaliação Completa do Site</option>
+<option>Teste de Invasão Controlado</option>
+<option>Reteste de Correções</option>
 <option>Ainda não sei, preciso de orientação</option>
 </select></div>
 <div class="field full"><label for="f-msg">Mensagem</label><textarea id="f-msg" name="mensagem" placeholder="Conte um pouco sobre seu site, o que preocupa e o que espera da avaliação."></textarea></div>
